@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 50px auto;
+}
+
+.container {
+    background-color: rgb(238, 238, 238);
+    padding: 20px;
+}
+
+.upperbox {
+    display: flex;
+    justify-content:space-between;
+}
+
+
+.box1 , .box2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+
+.box3 {
+    padding: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+img {
+    width: 15px;
+}
+
+input , select {
+    border: none;
+    border-bottom: 1px solid rgb(179, 177, 177);
+    outline: none;
+    background-color: rgb(238, 238, 238);
+    margin-bottom: 20px;
+    width: 46%;
+}
+
+h3 {
+    margin-bottom: 20px;
+}
+
+.container-X {
+    display: flex;
+    justify-content:flex-end;
+}
+
+.but {
+    background-color: rgb(134, 150, 78);
+    color:#fff;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    margin: 15px;
+    border:none;
+}
+
+input::placeholder , option::placeholder {
+    color: rgb(156, 154, 154);
+    text-indent: 5px;
+}
+
+.input-long {
+    width: 95%;
+}
+
+.agreement {
+    width: 15px;
+    font-size: 12px;
+}
+
+.agree p {
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.agree {
+    margin: 0 auto;
+}
+
+.password2 {
+    margin-left: 5px;
+}
+
+option {
+    color: rgb(156, 154, 154);
+}
+
+
+@media screen and (max-width:900px) and (min-width:600px){
+
+    .upperbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 input , .box2 input , .box2 select {
+        width: calc( 100% - 20px);
+    }
+
+    .underbox {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .underbox input , .underbox select {
+        width: calc( 100% / 2 );
+        margin-bottom: 0;
+    }
+
+    .password2 {
+        margin-left: 20px;
+    }
+
+    .underbox1 , .underbox2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .underbox1 input , .underbox1 select , .underbox2 input , .underbox2 select {
+        width: calc( 100% / 2.05);
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .upperbox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box1 input , .box2 input , .box2 select {
+        width: calc( 100% - 20px );
+    }
+
+    .underbox input , .underbox select {
+        width: calc( 100%  -20px );;
+    }
+
+    .password2 {
+        margin-left: 20px;
+    }
+}
